@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HARAWKAN | Anonymous Messages & Vibe</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800;900&family=Tajawal:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- الخلفية التفاعلية للإيموجيات المتحركة (تقدري تحركيهم بيدك) -->
+    <div class="interactive-bg" id="interactiveBg">
+        <span class="draggable-emoji" style="top: 8%; left: 5%;">🖤</span>
+        <span class="draggable-emoji" style="top: 15%; left: 85%;">✨</span>
+        <span class="draggable-emoji" style="top: 75%; left: 10%;">🚀</span>
+        <span class="draggable-emoji" style="top: 82%; left: 80%;">🎧</span>
+        <span class="draggable-emoji" style="top: 35%; left: 50%;">🔥</span>
+        <span class="draggable-emoji" style="top: 90%; left: 30%;">🥀</span>
+        <span class="draggable-emoji" style="top: 25%; left: 20%;">💫</span>
+        <span class="draggable-emoji" style="top: 60%; left: 70%;">👻</span>
+        <span class="draggable-emoji" style="top: 48%; left: 12%;">⭐</span>
+        <span class="draggable-emoji" style="top: 18%; left: 60%;">🖤</span>
+        <span class="draggable-emoji" style="top: 70%; left: 55%;">🥀</span>
+        <span class="draggable-emoji" style="top: 40%; left: 88%;">✨</span>
+    </div>
+
+    <!-- شريط العبارات المتحركة (محمي من الترجمة) -->
+    <div class="marquee-container" translate="no">
+        <div class="marquee-track notranslate" id="marqueeTrack">
+            <span class="mix-text">Fuck this shit let's make mistakes tonight and go to therapy tomorrow <span class="ar-word">كنبغيك</span> 🖤</span>
+            <span class="mix-text">but my ego said... <span class="ar-word">توحشتك</span> 🌙</span>
+            <span class="mix-text">Born to overshare, forced to say ....<span class="ar-word">والو</span> 💫</span>
+            <span class="mix-text">No hard feelings... <span class="ar-word">غير شوية</span> 🥀</span>
+            <span class="mix-text">It is what it is... <span class="ar-word">وصافي</span> 🌊</span>
+            <span class="mix-text">I saw the red flags... <span class="ar-word">aesthetic وقلت</span> 🔥</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="top-bar">
+                <h1 class="logo-pro">HARAWKAN</h1>
+            </div>
+            <p class="subtitle">Send an anonymous message, song, or sticker secretly..</p>
+        </header>
+
+        <div class="card">
+            <form id="messageForm">
+                <div class="input-group">
+                    <label for="secretMessage">💬 Secret Message:</label>
+                    <textarea id="secretMessage" placeholder="Write something from your heart... (100% anonymous)" rows="4" required></textarea>
+                </div>
+
+                <!-- خانة الموسيقى رجعات في بلاصتها -->
+                <div class="input-group">
+                    <label for="songLink">🎵 Song Link (YouTube / Spotify):</label>
+                    <input type="url" id="songLink" placeholder="https://open.spotify.com/... or YouTube">
+                </div>
+
+                <div class="input-group">
+                    <label>✨ Choose an animated sticker from pack:</label>
+                    
+                    <!-- الستيكر المختار بوحدو فالوسط -->
+                    <div class="selected-preview-container">
+                        <div class="selected-sticker-box" id="selectedStickerBox">
+                            <!-- هنا غيبان الستيكر المختار بوحدو -->
+                        </div>
+                        <span class="selected-hint">Selected Sticker</span>
+                    </div>
+
+                    <!-- شبكة الستيكرات الاخرى -->
+                    <div class="stickers-grid" id="stickersGrid"></div>
+                    <button type="button" id="moreStickersBtn" class="more-stickers-btn">Show More Stickers 🔻</button>
+                </div>
+
+                <button type="submit" class="send-btn">Send Secretly 🚀</button>
+            </form>
+            <div id="successMessage" class="hidden">✨ Your message has been sent successfully in total secrecy!</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
