@@ -8,12 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let selectedSticker = '';
 
-    // مضاعفة محتوى الشريط المتحرك لضمان الاستمرارية بلا توقف
     if (marqueeTrack) {
         marqueeTrack.innerHTML += marqueeTrack.innerHTML;
     }
 
-    // دالة لتحديث عرض الستيكر المختار بوحدو في الوسط
     function updateSelectedPreview(file) {
         selectedStickerBox.innerHTML = '';
         if (file.endsWith('.webm')) {
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // تفعيل تحريك الإيموجيات باليد (Drag & Drop) بكل سلاسة
     const emojis = document.querySelectorAll('.draggable-emoji');
     emojis.forEach(emoji => {
         let isDragging = false;
@@ -79,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // لائحة الستيكرات
     const stickerFiles = [
         "file_1764226.webm", "file_1764227.webm", "file_1764228.webm", "file_1764229.webm", 
         "file_1764232.webm", "file_1764234.webm", "file_1764236.webm", "file_1764238.webm", 
@@ -112,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if(index === 0) {
             div.classList.add('selected');
             selectedSticker = file;
-            updateSelectedPreview(file); // عرض الستيكر الأول تلقائياً في الوسط
+            updateSelectedPreview(file); 
         }
 
         if (file.endsWith('.webm')) {
@@ -134,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.sticker-opt').forEach(s => s.classList.remove('selected'));
             div.classList.add('selected');
             selectedSticker = file;
-            updateSelectedPreview(file); // تحديث الستيكر المختار في الوسط عند الضغط عليه
+            updateSelectedPreview(file); 
         });
 
         stickersGrid.appendChild(div);
