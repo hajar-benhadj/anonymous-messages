@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <!-- الخلفية التفاعلية للإيموجيات المتحركة (تقدري تحركيهم بيدك) -->
     <div class="interactive-bg" id="interactiveBg">
         <span class="draggable-emoji" style="top: 8%; left: 5%;">🖤</span>
         <span class="draggable-emoji" style="top: 15%; left: 85%;">✨</span>
@@ -25,7 +24,6 @@
         <span class="draggable-emoji" style="top: 40%; left: 88%;">✨</span>
     </div>
 
-    <!-- شريط العبارات المتحركة (محمي من الترجمة) -->
     <div class="marquee-container" translate="no">
         <div class="marquee-track notranslate" id="marqueeTrack">
             <span class="mix-text">Fuck this shit let's make mistakes tonight and go to therapy tomorrow <span class="ar-word">كنبغيك</span> 🖤</span>
@@ -52,7 +50,6 @@
                     <textarea id="secretMessage" placeholder="Write something from your heart... (100% anonymous)" rows="4" required></textarea>
                 </div>
 
-                <!-- خانة الموسيقى رجعات في بلاصتها -->
                 <div class="input-group">
                     <label for="songLink">🎵 Song Link (YouTube / Spotify):</label>
                     <input type="url" id="songLink" placeholder="https://open.spotify.com/... or YouTube">
@@ -61,15 +58,12 @@
                 <div class="input-group">
                     <label>✨ Choose an animated sticker from pack:</label>
                     
-                    <!-- الستيكر المختار بوحدو فالوسط -->
                     <div class="selected-preview-container">
                         <div class="selected-sticker-box" id="selectedStickerBox">
-                            <!-- هنا غيبان الستيكر المختار بوحدو -->
                         </div>
                         <span class="selected-hint">Selected Sticker</span>
                     </div>
 
-                    <!-- شبكة الستيكرات الاخرى -->
                     <div class="stickers-grid" id="stickersGrid"></div>
                     <button type="button" id="moreStickersBtn" class="more-stickers-btn">Show More Stickers 🔻</button>
                 </div>
