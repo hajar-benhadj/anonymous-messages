@@ -18,7 +18,6 @@ body {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* الخلفية التفاعلية للإيموجيات */
 .interactive-bg {
     position: absolute;
     top: 0;
@@ -30,7 +29,6 @@ body {
     pointer-events: none;
 }
 
-/* إيموجيات قابلة للجر باليد وعصرية */
 .draggable-emoji {
     position: absolute;
     font-size: 2.3rem;
@@ -54,7 +52,6 @@ body {
     100% { transform: translate(-20px, 20px) rotate(-10deg); }
 }
 
-/* شريط العبارات المتحركة بروفيشنال وبدون ترجمة */
 .marquee-container {
     width: 100%;
     background: rgba(15, 15, 20, 0.95);
@@ -86,7 +83,6 @@ body {
     text-shadow: 0 0 12px rgba(255, 117, 140, 0.7);
 }
 
-/* تخصيص خط العربية المدمج ليصبح واضحاً وجذاباً */
 .marquee-track span.ar-word {
     font-family: 'Tajawal', sans-serif;
     font-weight: 900;
@@ -99,7 +95,6 @@ body {
     100% { transform: translateX(-50%); }
 }
 
-/* الحاوية والشعار الكبير المتغير الألوان */
 .container {
     width: 100%;
     max-width: 520px;
@@ -280,7 +275,7 @@ textarea:focus, input[type="url"]:focus {
     margin-top: 15px;
     font-size: 0.95rem;
     font-weight: 700;
-}/* تنسيق الستيكر المختار بوحدو فالوسط */
+}
 .selected-preview-container {
     display: flex;
     flex-direction: column;
